@@ -1,0 +1,6 @@
+body{background-color: beige;font-family:Verdana, Geneva, Tahoma, sans-serif}
+.navbar{background-color: #457547;font-size: large;}
+input{ padding-top:5px; padding-bottom: 5px; border-radius:5px ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ; }
+select{padding-right: 20px;padding-left: 20px; padding-top:5px; padding-bottom: 5px; border-radius:5px ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ; }
+
+

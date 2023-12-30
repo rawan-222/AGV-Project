@@ -1,0 +1,30 @@
+{%extends 'graduationProject/base.html'%}
+{%load static%}
+{%block content%}
+<div class="pt-5">
+    <div class="mb-2 pb-2 ps-3">
+    <i class="fa-solid fa-truck-fast fa-2xl"></i>
+    <h2 class="d-inline">packages</h2>
+    </div>
+
+<table class="table table-striped">
+    <tr class="pt-2 mt-2">
+        <th class=" pt-2 fs-5 text-center"> </th>
+
+        <th class=" pt-2 fs-5 text-center">Packge </th>
+        <th class=" pt-2 fs-5 text-center">Status</th>
+        <th class=" pt-2 fs-5 text-center">Delete</th>
+
+    </tr>
+    {%for package in packages%}
+    <tr>
+        <td class=" text-center">{{package.id}}</td>
+
+        <td class=" text-center">{{package.name}}</td>
+        <td class="text-center">{{package.status}}</td>
+        <td class="text-center"><a href="{% url 'deletepackage' id=package.id%}"><button class="btn btn-danger" id="{{package.id}}">delete</button></a></td>
+    </tr>
+    {%endfor%}
+</table>
+</div>
+{%endblock content%}
